@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,QAAQ;EACJ,OAAO,EAAE,IAAI;;AAEjB,QAAQ;EACJ,QAAQ,EAAE,QAAQ;EAClB,KAAK,ECFD,IAAI;EDGR,MAAM,ECHF,IAAI;EDIR,SAAS,EAAE,mBAAmB;EAC9B,yBAAyB,EAAE,MAAM;EACjC,eAAe,EAAE,EAAE;;AAEvB,iBAIC;EAHG,EAAE;IAAC,IAAI,EAAE,CAAC;EACV,GAAG;IAAC,IAAI,EAAE,KAAK;EACf,IAAI;IAAC,IAAI,EAAE,CAAC",
+"sources": ["banner.scss","../../parameter/parameter.scss"],
+"names": [],
+"file": "banner.css"
+}

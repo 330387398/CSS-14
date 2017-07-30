@@ -1,0 +1,94 @@
+@charset "utf-8";  
+@import '../../parameter/parameter';
+
+//footer部分代码（三页通用）
+
+footer{
+    color: $color2;
+    background: $color1;
+}
+.bottom1{
+    margin: 0 auto;    
+    width: $width1;
+}
+.tree{
+    float: left;
+    margin-top: 2rem;
+}
+.skill1{
+    font-size: 1rem;
+}
+.skill2{
+    display: flex;
+    margin-top: 4rem;
+}
+.skill3{
+    cursor: pointer;
+}
+.skill3:hover{
+    border-bottom: 1px solid $color2;
+}
+.web{
+    padding: 2rem 0 2rem 21rem;
+}
+.skill4{
+    display: flex;
+}
+.skill5{
+    margin-top: 1.61rem;
+    cursor: pointer;
+}
+.skill6{
+    margin: 1.61rem 0 0 3.5rem;
+    cursor: pointer;
+}
+.skill5:hover,.skill6:hover{
+    border-bottom: 1px solid $color2;
+}
+.wechat{
+    float: right;
+    margin-top: -8.5rem;
+}
+.text8{
+    margin: 0 0 0.5rem 0.5rem;
+}
+@media only screen and (max-width: 1199px) {
+    .bottom1{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .bottom1{
+        width: $width3;
+    }
+    .web{
+        padding: 2rem 0 2rem 15rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .bottom1{
+        margin: 0 15px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bottom1{
+        width: $width;
+        margin: 0;
+    }
+    .tree,.web,.wechat{
+        padding: 1rem 0 1rem 15px;
+    }
+    .tree,.wechat{
+        float: none;
+    }
+    .wechat{
+        margin: 0;
+    }
+}
+.bottom2{
+    padding: 0 15px;
+    line-height: 2rem;
+    text-align: center;
+    border-top: 1px solid $color2;    
+}

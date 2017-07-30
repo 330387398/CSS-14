@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/*
+  Document    : CSS样式初始化  
+  Created on  : 2017.7.27  
+  Author      : None  
+  Description : CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性  
+*/
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0; }
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset, img {
+  border: 0 none; }
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl, ul, ol, menu, li {
+  list-style: none; }
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {
+  quotes: none; }
+
+/* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* 重置嵌套引用*/
+input, select, textarea, button {
+  vertical-align: middle; }
+
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer; }
+
+/* 重置表单button按钮效果 */
+body {
+  background: #fff; }
+
+/* 重置body 页面背景为白色 */
+body, th, td, input, select, textarea, button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "微软雅黑", "黑体","宋体";
+  color: #666; }
+
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* 重置链接a标签 */
+a:active, a:hover {
+  text-decoration: none; }
+
+/* 重置链接a标签的鼠标滑动效果 */
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal; }
+
+/* 重置样式标签的样式 */
+caption {
+  display: none; }
+
+/* 重置表格标题为隐藏 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed; }
+
+/* 重置table属性 */
+img {
+  vertical-align: top; }
+
+/* 图片在当前行内的垂直位置 */
+/* 页面设置 */
+a {
+  outline: none; }
+
+a:active {
+  star: expression(this.onFocus=this.blur()); }
+
+/* 取消a标签点击后的虚线框 */
+::selection {
+  color: #fff;
+  background-color: #4C6E78; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #4C6E78; }
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*清除浮动*/
+body {
+  font-size: 62.5%;
+  background-color: #fafafa !important;
+  overflow-x: hidden; }
+
+/*根据页面实际需求的添加*/
+header {
+  height: 2.5rem;
+  background: white; }
+
+.top {
+  margin: 0 auto;
+  width: 1150px; }
+
+.phone {
+  float: left;
+  margin-top: 0.8rem;
+  color: #29b078;
+  font-size: 0.9rem; }
+
+.img {
+  float: right;
+  margin: 0.5rem 0 0 0.5rem;
+  cursor: pointer; }
+
+@media only screen and (max-width: 1199px) {
+  .top {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .top {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .top {
+    margin: 0 15px;
+    width: auto; } }
+.guide {
+  height: 6rem;
+  background: #29b078; }
+
+.guide1 {
+  margin: 0 auto;
+  width: 1150px; }
+
+.guide2, .guide3 {
+  float: right;
+  padding: 2.15rem 2.5rem;
+  color: white;
+  font-size: 1.2rem; }
+
+.guide3 {
+  margin-right: -2.5rem; }
+
+.guide2:hover, .guide3:hover {
+  border-bottom: 0.5rem solid white; }
+
+@media only screen and (max-width: 1199px) {
+  .guide1 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .guide1 {
+    width: 718px; } }
+@media only screen and (max-width: 800px) {
+  .guide3 {
+    margin-right: -1.5rem; } }
+.blank {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .guide {
+    height: auto; }
+
+  .blank {
+    display: block;
+    margin-left: 10rem;
+    width: 1px;
+    height: 3rem; }
+
+  .guide1 {
+    display: none; } }
+.guide4 {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .guide4 {
+    display: block; } }
+.guide5 {
+  float: right;
+  margin: -3rem 15px 0 0;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+  cursor: pointer; }
+
+.guide6 {
+  display: none;
+  padding-bottom: 0.5rem;
+  background: #29b078; }
+
+.guide4:hover .guide6 {
+  display: block; }
+
+.guide7, .guide8 {
+  color: white;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center; }
+
+.guide7 {
+  border-top: 1px solid lightgray; }
+
+.guide7:hover, .guide8:hover {
+  border-bottom: 1px solid lightgray; }
+
+.logo {
+  margin-top: 1.5rem; }
+
+.logo1 {
+  display: none;
+  float: left;
+  margin: -2.6rem 0 0 15px;
+  width: 5rem; }
+
+@media only screen and (max-width: 767px) {
+  .logo1 {
+    display: block; } }
+footer {
+  color: white;
+  background: #29b078; }
+
+.bottom1 {
+  margin: 0 auto;
+  width: 1150px; }
+
+.tree {
+  float: left;
+  margin-top: 2rem; }
+
+.skill1 {
+  font-size: 1rem; }
+
+.skill2 {
+  display: flex;
+  margin-top: 4rem; }
+
+.skill3 {
+  cursor: pointer; }
+
+.skill3:hover {
+  border-bottom: 1px solid white; }
+
+.web {
+  padding: 2rem 0 2rem 21rem; }
+
+.skill4 {
+  display: flex; }
+
+.skill5 {
+  margin-top: 1.61rem;
+  cursor: pointer; }
+
+.skill6 {
+  margin: 1.61rem 0 0 3.5rem;
+  cursor: pointer; }
+
+.skill5:hover, .skill6:hover {
+  border-bottom: 1px solid white; }
+
+.wechat {
+  float: right;
+  margin-top: -8.5rem; }
+
+.text8 {
+  margin: 0 0 0.5rem 0.5rem; }
+
+@media only screen and (max-width: 1199px) {
+  .bottom1 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .bottom1 {
+    width: 718px; }
+
+  .web {
+    padding: 2rem 0 2rem 15rem; } }
+@media only screen and (max-width: 767px) {
+  .bottom1 {
+    margin: 0 15px;
+    width: auto; } }
+@media only screen and (max-width: 600px) {
+  .bottom1 {
+    width: 100%;
+    margin: 0; }
+
+  .tree, .web, .wechat {
+    padding: 1rem 0 1rem 15px; }
+
+  .tree, .wechat {
+    float: none; }
+
+  .wechat {
+    margin: 0; } }
+.bottom2 {
+  padding: 0 15px;
+  line-height: 2rem;
+  text-align: center;
+  border-top: 1px solid white; }
+
+.layer0, .layer23, .layer24 {
+  display: flex; }
+
+.layer25 {
+  display: none; }
+
+@media only screen and (max-width: 1199px) {
+  .layer0 {
+    display: block; }
+
+  .layer23 {
+    display: none; }
+
+  .layer25 {
+    display: flex; } }
+.layer1 {
+  margin: 3rem 0.5rem 0 0.5rem;
+  width: 368px;
+  height: 465px;
+  background: white;
+  border-radius: 1%;
+  box-shadow: 0 0 1rem darkgray; }
+
+@media only screen and (max-width: 1199px) {
+  .layer1 {
+    margin: 3rem 3rem 0 3rem; } }
+@media only screen and (max-width: 991px) {
+  .layer0, .layer24, .layer25 {
+    margin-left: -1.5rem; }
+
+  .layer1 {
+    margin: 3rem 0.5rem 0 0.5rem; } }
+.layer2 {
+  margin-top: -1rem; }
+
+.background {
+  margin-top: -3rem;
+  padding: 0 3rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: 1%;
+  display: none; }
+
+.text1 {
+  margin: 3rem 0;
+  padding-top: 5rem;
+  font-size: 1rem;
+  text-align: center; }
+
+.text2 {
+  line-height: 1.5rem; }
+
+.layer1:hover .background {
+  display: block; }
+
+.layer1:hover .layer2 {
+  margin-top: -481px; }
+
+.layer3 {
+  border-bottom: 1px solid lightgray; }
+
+.img1 {
+  float: left;
+  margin: 1rem;
+  width: 8rem; }
+
+.layer4 {
+  margin: 1rem 0 -2rem 0;
+  height: 12rem; }
+
+.layer5 {
+  margin: 1rem 0;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold; }
+
+.layer6 {
+  padding-right: 2rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  word-break: break-all; }
+
+.layer7 {
+  display: flex;
+  font-size: 0.8rem;
+  border-bottom: 1px solid lightgray; }
+
+.layer8 {
+  display: flex;
+  margin-left: 1rem; }
+
+.layer9 {
+  color: darkgray;
+  line-height: 3rem;
+  white-space: nowrap; }
+
+.img2, .layer11 {
+  margin: auto 0 auto 1rem; }
+
+.layer10, .layer13 {
+  display: flex;
+  margin-left: 7rem;
+  padding-left: 1rem;
+  border-left: 1px solid lightgray; }
+
+.layer11 {
+  color: #ff5c00;
+  font-weight: bold;
+  white-space: nowrap; }
+
+.layer12 {
+  margin: auto 0 auto 0.1rem;
+  font-weight: bold;
+  white-space: nowrap; }
+
+.layer13 {
+  margin-left: 4.2rem; }
+
+@media only screen and (max-width: 767px) {
+  .layer10 {
+    margin-left: 5.8rem; }
+
+  .layer13 {
+    margin-left: 3rem; } }
+.layer14 {
+  width: 35%;
+  height: 7.7rem;
+  color: darkgray;
+  line-height: 7.7rem;
+  text-align: center;
+  border-right: 1px solid lightgray; }
+
+.layer15 {
+  width: 65%; }
+
+.layer16 {
+  display: flex;
+  font-weight: bold;
+  line-height: 2.5rem;
+  border-bottom: 1px solid lightgray; }
+
+.layer17 {
+  float: left;
+  margin-left: 2rem; }
+
+.layer18 {
+  margin-left: 5.5rem; }
+
+@media only screen and (max-width: 767px) {
+  .layer18 {
+    margin-left: 50%; } }
+@media only screen and (max-width: 600px) {
+  .layer18 {
+    margin-left: 40%; } }
+@media only screen and (max-width: 500px) {
+  .layer18 {
+    margin-left: 30%; } }
+.layer19 {
+  display: flex;
+  padding-left: 1rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  border-bottom: 1px solid lightgray; }
+
+.layer20 {
+  color: red; }
+
+.layer21 {
+  margin-top: -0.1rem;
+  padding-left: -0.1rem;
+  color: darkgray;
+  -webkit-transform: scale(0.95);
+  line-height: 2.5rem;
+  white-space: nowrap; }
+
+.layer22 {
+  display: flex; }
+
+@media only screen and (max-width: 767px) {
+  .layer1 {
+    margin: 3rem auto;
+    width: 80%; }
+
+  .background {
+    margin-top: 0; }
+
+  .layer2 {
+    margin-top: 3rem; }
+
+  .layer22, .layer24, .layer25 {
+    display: block; } }
+@media only screen and (max-width: 480px) {
+  .layer21 {
+    margin-left: -1.5rem;
+    -webkit-transform: scale(0.8); } }
+@media only screen and (max-width: 458px) {
+  .layer5 {
+    margin-bottom: 0.5rem;
+    padding-top: 1.5rem; }
+
+  .layer6 {
+    padding-right: 1rem; }
+
+  .layer10 {
+    margin-left: 3.8rem; }
+
+  .layer13 {
+    margin-left: 1rem; } }
+@media only screen and (max-width: 420px) {
+  .layer8, .layer11 {
+    margin-left: 0.5rem; }
+
+  .layer10 {
+    margin-left: 3.3rem; }
+
+  .layer10, .layer13 {
+    padding-left: 0.5rem; }
+
+  .layer18 {
+    margin-left: 20%; } }
+@media only screen and (max-width: 407px) {
+  .layer1 {
+    width: 90%; }
+
+  .layer0, .layer24, .layer25 {
+    margin-left: 0; } }
+@media only screen and (max-width: 370px) {
+  .img1 {
+    margin-top: 2rem;
+    width: 6rem; }
+
+  .layer21 {
+    margin-left: -2.2rem;
+    -webkit-transform: scale(0.7); } }
+@media only screen and (max-width: 350px) {
+  .layer1 {
+    width: 95%; }
+
+  .layer10 {
+    margin-left: 2.8rem; }
+
+  .layer13 {
+    margin-left: 0.5rem; }
+
+  .layer18 {
+    margin-left: 10%; } }
+.guide9 {
+  display: flex;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 1150px;
+  font-size: 0.9rem;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid lightgray;
+  white-space: nowrap; }
+
+.direction {
+  margin-right: 1rem;
+  color: darkgray; }
+
+ul {
+  display: flex; }
+
+.text0 {
+  margin-top: -0.4rem;
+  padding: 0.3rem;
+  color: white;
+  font-weight: bold;
+  background: #29b078; }
+
+.text {
+  color: black;
+  margin: -0.4rem 0 0 1rem;
+  padding: 0.3rem; }
+
+.text:hover {
+  color: white;
+  font-weight: bold;
+  background: #29b078; }
+
+@media only screen and (max-width: 1199px) {
+  .guide9 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .guide9 {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .guide9 {
+    margin: 0 15px;
+    width: auto; } }
+@media only screen and (max-width: 550px) {
+  .guide9 {
+    margin: 0 15px;
+    padding-bottom: 0;
+    width: auto; }
+
+  ul {
+    display: block; }
+
+  li {
+    float: left;
+    margin-bottom: 1rem; }
+
+  .text0 {
+    margin-right: 1rem; }
+
+  .text {
+    margin: -0.4rem 1rem 0 0; } }
+.title1 {
+  display: flex;
+  margin: 1.5rem auto;
+  width: 1150px;
+  font-size: 1rem; }
+
+.title2, .job {
+  color: black;
+  text-decoration: none; }
+
+.job {
+  color: #29b078; }
+
+@media only screen and (max-width: 1199px) {
+  .title1 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .title1 {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .title1 {
+    margin: 1.5rem 15px;
+    width: auto; } }
+main {
+  width: 1150px;
+  margin: 0 auto 3rem auto; }
+
+@media only screen and (max-width: 1199px) {
+  main {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  main {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  main {
+    margin: 2rem 15px 3rem 15px;
+    width: auto; } }
+.lead1 {
+  padding: 2rem 0;
+  width: 100%;
+  border-bottom: 1px solid darkgray; }
+
+.lead2 {
+  font-family: "榛戜綋";
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+/*# sourceMappingURL=Task14-2.css.map */

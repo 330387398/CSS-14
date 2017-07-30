@@ -1,0 +1,41 @@
+@charset "utf-8";  
+@import '../../parameter/parameter';
+
+//页面三企业选择部分代码
+
+.border{
+    float: left;
+    width: 18rem;
+    background: $color2;    
+    border-radius: 2%;
+    box-shadow: 0 0 0.1rem $color3;
+}
+.title3{
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid $color4
+}
+ul,li{
+    padding: 1rem 0;
+}
+.circle{
+    float: left;
+    margin: 0.2rem 0.5rem 0 6rem;
+    width: 7px;
+    height: 7px;
+    border: 2px solid rgb(249,163,114);
+    border-radius: $width; 
+}
+.name{
+    color: $color1;
+    font-size: 1rem;
+}
+li:hover .circle{
+    background: rgb(249,163,114);
+}
+li:hover .name{
+    font-weight: bold;
+    color: rgb(249,163,114);
+}

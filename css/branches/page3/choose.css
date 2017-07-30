@@ -1,0 +1,37 @@
+.border {
+  float: left;
+  width: 18rem;
+  background: white;
+  border-radius: 2%;
+  box-shadow: 0 0 0.1rem darkgray; }
+
+.title3 {
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid lightgray; }
+
+ul, li {
+  padding: 1rem 0; }
+
+.circle {
+  float: left;
+  margin: 0.2rem 0.5rem 0 6rem;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #f9a372;
+  border-radius: 100%; }
+
+.name {
+  color: #29b078;
+  font-size: 1rem; }
+
+li:hover .circle {
+  background: #f9a372; }
+
+li:hover .name {
+  font-weight: bold;
+  color: #f9a372; }
+
+/*# sourceMappingURL=choose.css.map */

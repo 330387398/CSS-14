@@ -1,0 +1,66 @@
+@import 'reset/reset';
+@import 'parameter/parameter';
+@import 'branches/header/header';
+@import 'branches/guide/guide';
+@import 'branches/footer/footer';
+@import 'branches/page2/label';
+@import 'branches/page2/choose';
+.title1{
+    display: flex;
+    margin: 1.5rem auto;
+    width: $width1;
+    font-size: 1rem;
+}
+.title2,.job{
+    color: black;
+    text-decoration: none;
+}
+.job{
+    color: $color1;
+}
+@media only screen and (max-width: 1199px) {
+    .title1{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .title1{
+        width: $width3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .title1{
+        margin: 1.5rem 15px;
+        width: auto;
+    }
+}
+main{
+    width: $width1;
+    margin: 0 auto 3rem auto;
+}
+@media only screen and (max-width: 1199px) {
+    main{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    main{
+        width: $width3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    main{
+        margin: 2rem 15px 3rem 15px;
+        width: auto;
+    }
+}
+.lead1{
+    padding: 2rem 0;
+    width: $width;    
+    border-bottom: 1px solid $color3;
+}
+.lead2{
+    font-family: "黑体";
+    font-size: 1.2rem;
+    font-weight: bold;
+}

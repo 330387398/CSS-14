@@ -1,0 +1,40 @@
+@charset "utf-8";  
+@import '../../parameter/parameter';
+
+//header部分代码（三页通用）
+
+header{
+    height: 2.5rem;
+    background: $color2;
+}
+.top{
+    margin: 0 auto;    
+    width: $width1;
+}
+.phone{
+    float: left;
+    margin-top: 0.8rem;
+    color: $color1;
+    font-size: 0.9rem;
+}
+.img{
+    float: right;
+    margin: 0.5rem 0 0 0.5rem;
+    cursor: pointer;    
+}
+@media only screen and (max-width: 1199px) {
+    .top{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .top{
+        width: $width3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .top{
+        margin: 0 15px;
+        width: auto;
+    }
+}

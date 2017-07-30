@@ -1,0 +1,337 @@
+@import 'reset/reset';
+@import 'parameter/parameter';
+@import 'branches/header/header';
+@import 'branches/guide/guide';
+@import 'branches/footer/footer';
+@import 'branches/page1/banner';
+@import 'branches/page1/studentshow';
+
+main{
+    margin: 5rem auto;    
+    width: $width1;
+}
+.mainhead{
+    display: flex;    
+}
+.mainheadtop,.mainheadright{
+    width: 25%;
+}
+.mainheadright{
+    padding-top: 4rem;
+    border-left: 1px dashed $color4;
+}
+.img1,.img2,.img3{
+    text-align: center;
+}
+.img2{
+    margin-top: 0.8rem;
+}
+.img3{
+    margin-top: 0.4rem;
+}
+.title1{
+    margin: 1.5rem 0;    
+    font-weight: bold;
+    text-align: center;
+}
+.text1,.text4{
+    padding: 0 20%;
+    color: $color3;    
+    line-height: 1.3rem;
+}
+.img4{
+    float: left;
+    margin: 0 0.3rem 0 3.5rem;
+}
+.text2{
+    color: $color1;
+    font-weight: bold;
+}
+.text3{
+    margin: 0.8rem 0 1.5rem 3.5rem;
+    color: $color3;
+}
+@media only screen and (max-width: 1199px) {
+    main{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    main{
+        width: $width3;
+    }
+    .mainhead{
+        display: block;
+        text-align: center;
+    }
+    .mainheadtop,.mainheadright{
+        width: $width;
+    }
+    .mainheadright{
+        padding-top: 0;
+        border: none;
+    }
+    .text1,.text4{
+        margin: -1rem 0 4rem 0;
+        padding: 0;
+    }
+    .img4{
+        float: none;
+        margin-left: -1.2rem;
+    }
+    .text2{
+        margin: -0.8rem -2.8rem 0 0;
+        padding-bottom: 1rem;
+    }
+    .text3{
+        margin: -0.3rem 0 1.5rem 1rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    main{
+        margin: 5rem 15px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .text4{
+        text-align: left;
+    }
+}
+.howtostudy{
+    margin: 5rem 0 2rem 0;
+    width: $width;
+    font-family: "黑体";
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.mainmiddle{
+    display: flex;
+}
+.step{
+    display: table;
+    margin-top: 2rem;
+    width: 25%;
+    height: $height1;
+}
+.circle{
+    float: left;
+    margin: 0 1rem 0 2rem;
+    width: $height1;
+    height: $height1;
+    color: $color1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: $color2;
+    border: 1px solid $color4;
+    border-bottom: 2px solid $color4;
+    border-radius: $width;
+}
+.number{
+    margin: 0.9rem 0 0 1.1rem;
+}
+.text5{
+    display: table-cell;
+    vertical-align: middle;
+    width: 15rem;
+    color: darkgray;
+    line-height: 1.2rem;
+}
+.img5,.img6{
+    float: right;
+    margin: 0 -1rem 0.9rem 1rem;
+}
+.img6{
+    display: none;
+}
+@media only screen and (max-width: 1199px) {
+    .mainmiddle{
+        margin-left: -2rem;
+    }
+    .img5,.img6{
+        margin: 0 -1.5rem 0.9rem 0.5rem;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .mainmiddle,.step,.text5{
+        display: block;
+    }
+    .step{
+        margin-left: 13rem;
+        width: 50%;
+        border: 1px solid rgb(250,250,250);
+    }
+    .text5{
+        margin-top: 1rem;
+        width: auto;
+    }
+    .img5{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .step{
+        margin-left: 28%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .step{
+        margin-left: 22%;
+        width: $width;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .step{
+        margin-left: 18%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .step{
+        margin-left: 13%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .step{
+        margin-left: -2px;
+    }
+}
+@media only screen and (max-width: 336px) {
+    .step{
+        display: table;
+    }
+    .text5{
+        display: table-cell;
+        vertical-align: middle;
+        width: 20rem;
+    }
+}
+.company{
+    display: flex;
+    width: $width;
+    height: 10rem;
+    background-color: $color2;
+    border-radius: 1%;
+    box-shadow: 0 0 0.2rem $color3;
+}
+.logo2,.logo3,.logo4,.logo5,.logo6{
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+.logo2{   
+    padding: 0.2rem 0;
+    margin: 0 0.5rem 0 0.1rem;  
+}
+.logo3,.logo4,.logo5{
+    margin: 0 0.5rem;
+}
+.logo3{
+    padding: 2.8rem 0;
+}
+.logo4{
+    padding: 0.7rem 0;
+}
+.logo5{
+    padding: 2.4rem 0;
+}
+.logo6{
+    padding: 0.9rem 0.5rem 0.9rem 0;
+}
+.logo2:hover,.logo3:hover,.logo4:hover,.logo5:hover,.logo6:hover{
+    box-shadow: 0 0 1rem $color4;
+}
+@media only screen and (max-width:991px ) {
+    .company{
+        display: block;
+        height: auto;
+        background: none;
+        box-shadow: none;        
+    }
+    .logo2,.logo3,.logo4,.logo5,.logo6{
+        margin: 1rem auto;
+        width: 20rem;        
+        background: $color2;
+    }
+}
+@media only screen and (max-width:400px ) {
+    .logo2,.logo3,.logo4,.logo5,.logo6{
+        width: 15rem;        
+    }
+}
+.friend,.white{
+    width: $width;
+    background: $color2;
+}
+.friend{
+    padding-top: 1rem;    
+    height: 2rem;
+    font-family: "黑体";
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.white{
+    height: 4rem;
+}
+.link{
+    margin: 0 auto;
+    width: $width1;
+}
+.text7{
+    float: left;
+    margin: 0.5rem 1.5rem;
+    width: 4rem;
+    color: $color3;
+    white-space:nowrap;
+    cursor: pointer;
+}
+.text7:hover{
+    text-decoration: underline;
+    text-decoration-color: $color1;
+}
+@media only screen and (max-width: 1199px) {
+    .white{
+        height: $height2;
+    }
+    .link{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .white{
+        height: 8rem;
+    }
+    .link{
+        width: $width3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .link{
+        margin: 0 15px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 606px) {
+    .white{
+        height: 10rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .white{
+        margin-bottom: -2rem;
+    }
+}
+@media only screen and (max-width: 494px) {
+    .white{
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 382px) {
+    .white{
+        height: 18rem;
+    }
+    .link{
+        margin-left: $height1;
+    }
+}

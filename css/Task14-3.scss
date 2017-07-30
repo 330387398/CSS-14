@@ -1,0 +1,161 @@
+@import 'reset/reset';
+@import 'parameter/parameter';
+@import 'branches/header/header';
+@import 'branches/guide/guide';
+@import 'branches/footer/footer';
+@import 'branches/page3/choose';
+
+.banner{
+    width: $width;
+}
+.title1{
+    display: flex;
+    margin: 1.5rem auto;
+    width: $width1;
+    font-size: 1rem;
+}
+.title2,.company{
+    color: black;
+    text-decoration: none;
+}
+.company{
+    color: $color1;
+}
+@media only screen and (max-width: 1199px) {
+    .title1{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .title1{
+        width: $width3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .title1{
+        margin: 1.5rem 15px;
+        width: auto;
+    }
+}
+main{
+    margin: 0 auto;
+    width: $width1;
+}
+@media only screen and (max-width: 1199px) {
+    main{
+        width: $width2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    main{
+        width: $width3;
+    }
+}
+@media only screen and (max-width: 767px) {
+    main{
+        margin: 0 15px;
+        width: auto;
+    }
+}
+.mainright{
+    margin: 0 0 10rem 20rem;
+    padding: 1rem 0;
+    background: $color2;   
+    border-radius: 2%;
+    box-shadow: 0 0 0.1rem $color3;
+}
+.title4{
+    padding: 0 2rem;
+    border-bottom: 1px solid $color4;
+}
+.text1{
+    margin: -6rem 0 2rem 10rem;
+    color: $color3;
+    line-height: 1.5rem;
+}
+.text2{
+    margin: 2rem 0;
+    padding: 0 5rem;
+    color: $color3;
+    line-height: 1.5rem;
+}
+@media only screen and (max-width: 1199px) {
+    .logo2{
+        margin-top: 1rem;
+    }
+    .text1{
+        margin-top: -7rem;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .border{
+        width: 12rem;
+    }
+    .circle{
+        margin-left: 3rem;
+    }
+    .mainright{
+        margin-left: 14rem;
+    }
+    .logo2{
+        margin-top: 3rem;
+    }
+    .text1{
+        margin-top: -9rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .border{
+        float: none;
+        width: $width;
+        height: 15rem;
+        margin-bottom: 2rem;
+    }
+    li{
+        float: left;
+        width: 10rem;
+    }
+    .mainright{
+        width: $width;
+        margin-left: 0;
+    }
+    .logo2{
+        margin-top: 1rem;
+    }
+    .text1{
+        margin-top: -7rem;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .border{
+        height: 18rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .logo2{
+        margin: 0 auto;
+        width: 8rem;
+    }
+    .text1{
+        margin: 0 0 2rem 0;
+    }
+    .text2{
+        padding: 0 2rem;
+    }
+}
+@media only screen and (max-width: 509px) {
+    .border{
+        height: 25rem;
+    }
+}
+@media only screen and (max-width: 366px) {
+    .border{
+        height: 40rem;
+    }
+    li{
+        width: 20rem;
+    }
+    .circle{
+        margin-left: 30%;
+    }
+}

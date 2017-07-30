@@ -1,0 +1,68 @@
+.studentshow0 {
+  display: flex;
+  margin-top: 3rem; }
+
+.studentshow {
+  margin: 0 1rem;
+  width: 25%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  border-radius: 5px; }
+
+.img7 {
+  margin: 1.5rem 0 2.5rem 0; }
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+.text6 {
+  padding: 1rem 2rem 2rem 2.5rem;
+  text-align: left;
+  line-height: 1.5rem; }
+
+@media only screen and (max-width: 1199px) {
+  .studentshow {
+    margin: 0 0.5rem; }
+
+  .name {
+    font-size: 0.9rem; }
+
+  .text6 {
+    padding: 1rem 1.5rem 2rem 2rem; } }
+@media only screen and (max-width: 991px) {
+  .studentshow0 {
+    display: block;
+    margin: 0 10px 0 -5px; }
+
+  .studentshow {
+    margin-bottom: 2rem;
+    width: 100%; }
+
+  .text6 {
+    padding: 1rem 5rem 2rem 5rem; } }
+@media only screen and (max-width: 400px) {
+  .text6 {
+    padding: 1rem 2rem 2rem 2.5rem; } }
+.point {
+  display: flex;
+  margin: 1rem auto;
+  width: 4.5rem; }
+
+.point1, .point2 {
+  margin: 0 0.2rem;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 100%;
+  cursor: pointer; }
+
+.point1 {
+  background: #29b078; }
+
+.point2:hover {
+  background: #29b078; }
+
+/*# sourceMappingURL=studentshow.css.map */

@@ -1,0 +1,31 @@
+header {
+  height: 2.5rem;
+  background: white; }
+
+.top {
+  margin: 0 auto;
+  width: 1150px; }
+
+.phone {
+  float: left;
+  margin-top: 0.8rem;
+  color: #29b078;
+  font-size: 0.9rem; }
+
+.img {
+  float: right;
+  margin: 0.5rem 0 0 0.5rem;
+  cursor: pointer; }
+
+@media only screen and (max-width: 1199px) {
+  .top {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .top {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .top {
+    margin: 0 15px;
+    width: auto; } }
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,685 @@
+@charset "UTF-8";
+/*
+  Document    : CSS样式初始化  
+  Created on  : 2017.7.27  
+  Author      : None  
+  Description : CSS样式表的初始化，全局样式设置。部分样式属性请根据具体页面重置其属性  
+*/
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0; }
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+fieldset, img {
+  border: 0 none; }
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+dl, ul, ol, menu, li {
+  list-style: none; }
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {
+  quotes: none; }
+
+/* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* 重置嵌套引用*/
+input, select, textarea, button {
+  vertical-align: middle; }
+
+/* 重置表单控件垂直居中*/
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer; }
+
+/* 重置表单button按钮效果 */
+body {
+  background: #fff; }
+
+/* 重置body 页面背景为白色 */
+body, th, td, input, select, textarea, button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "微软雅黑", "黑体","宋体";
+  color: #666; }
+
+/* 重置页面文字属性 */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* 重置链接a标签 */
+a:active, a:hover {
+  text-decoration: none; }
+
+/* 重置链接a标签的鼠标滑动效果 */
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal; }
+
+/* 重置样式标签的样式 */
+caption {
+  display: none; }
+
+/* 重置表格标题为隐藏 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed; }
+
+/* 重置table属性 */
+img {
+  vertical-align: top; }
+
+/* 图片在当前行内的垂直位置 */
+/* 页面设置 */
+a {
+  outline: none; }
+
+a:active {
+  star: expression(this.onFocus=this.blur()); }
+
+/* 取消a标签点击后的虚线框 */
+::selection {
+  color: #fff;
+  background-color: #4C6E78; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #4C6E78; }
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*清除浮动*/
+body {
+  font-size: 62.5%;
+  background-color: #fafafa !important;
+  overflow-x: hidden; }
+
+/*根据页面实际需求的添加*/
+header {
+  height: 2.5rem;
+  background: white; }
+
+.top {
+  margin: 0 auto;
+  width: 1150px; }
+
+.phone {
+  float: left;
+  margin-top: 0.8rem;
+  color: #29b078;
+  font-size: 0.9rem; }
+
+.img {
+  float: right;
+  margin: 0.5rem 0 0 0.5rem;
+  cursor: pointer; }
+
+@media only screen and (max-width: 1199px) {
+  .top {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .top {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .top {
+    margin: 0 15px;
+    width: auto; } }
+.guide {
+  height: 6rem;
+  background: #29b078; }
+
+.guide1 {
+  margin: 0 auto;
+  width: 1150px; }
+
+.guide2, .guide3 {
+  float: right;
+  padding: 2.15rem 2.5rem;
+  color: white;
+  font-size: 1.2rem; }
+
+.guide3 {
+  margin-right: -2.5rem; }
+
+.guide2:hover, .guide3:hover {
+  border-bottom: 0.5rem solid white; }
+
+@media only screen and (max-width: 1199px) {
+  .guide1 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .guide1 {
+    width: 718px; } }
+@media only screen and (max-width: 800px) {
+  .guide3 {
+    margin-right: -1.5rem; } }
+.blank {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .guide {
+    height: auto; }
+
+  .blank {
+    display: block;
+    margin-left: 10rem;
+    width: 1px;
+    height: 3rem; }
+
+  .guide1 {
+    display: none; } }
+.guide4 {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .guide4 {
+    display: block; } }
+.guide5 {
+  float: right;
+  margin: -3rem 15px 0 0;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+  cursor: pointer; }
+
+.guide6 {
+  display: none;
+  padding-bottom: 0.5rem;
+  background: #29b078; }
+
+.guide4:hover .guide6 {
+  display: block; }
+
+.guide7, .guide8 {
+  color: white;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center; }
+
+.guide7 {
+  border-top: 1px solid lightgray; }
+
+.guide7:hover, .guide8:hover {
+  border-bottom: 1px solid lightgray; }
+
+.logo {
+  margin-top: 1.5rem; }
+
+.logo1 {
+  display: none;
+  float: left;
+  margin: -2.6rem 0 0 15px;
+  width: 5rem; }
+
+@media only screen and (max-width: 767px) {
+  .logo1 {
+    display: block; } }
+footer {
+  color: white;
+  background: #29b078; }
+
+.bottom1 {
+  margin: 0 auto;
+  width: 1150px; }
+
+.tree {
+  float: left;
+  margin-top: 2rem; }
+
+.skill1 {
+  font-size: 1rem; }
+
+.skill2 {
+  display: flex;
+  margin-top: 4rem; }
+
+.skill3 {
+  cursor: pointer; }
+
+.skill3:hover {
+  border-bottom: 1px solid white; }
+
+.web {
+  padding: 2rem 0 2rem 21rem; }
+
+.skill4 {
+  display: flex; }
+
+.skill5 {
+  margin-top: 1.61rem;
+  cursor: pointer; }
+
+.skill6 {
+  margin: 1.61rem 0 0 3.5rem;
+  cursor: pointer; }
+
+.skill5:hover, .skill6:hover {
+  border-bottom: 1px solid white; }
+
+.wechat {
+  float: right;
+  margin-top: -8.5rem; }
+
+.text8 {
+  margin: 0 0 0.5rem 0.5rem; }
+
+@media only screen and (max-width: 1199px) {
+  .bottom1 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .bottom1 {
+    width: 718px; }
+
+  .web {
+    padding: 2rem 0 2rem 15rem; } }
+@media only screen and (max-width: 767px) {
+  .bottom1 {
+    margin: 0 15px;
+    width: auto; } }
+@media only screen and (max-width: 600px) {
+  .bottom1 {
+    width: 100%;
+    margin: 0; }
+
+  .tree, .web, .wechat {
+    padding: 1rem 0 1rem 15px; }
+
+  .tree, .wechat {
+    float: none; }
+
+  .wechat {
+    margin: 0; } }
+.bottom2 {
+  padding: 0 15px;
+  line-height: 2rem;
+  text-align: center;
+  border-top: 1px solid white; }
+
+.banner1 {
+  display: flex; }
+
+.banner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: mymove 15s infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s; }
+
+@keyframes mymove {
+  0% {
+    left: 0; }
+  50% {
+    left: -200%; }
+  100% {
+    left: 0; } }
+.studentshow0 {
+  display: flex;
+  margin-top: 3rem; }
+
+.studentshow {
+  margin: 0 1rem;
+  width: 25%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  border-radius: 5px; }
+
+.img7 {
+  margin: 1.5rem 0 2.5rem 0; }
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold; }
+
+.text6 {
+  padding: 1rem 2rem 2rem 2.5rem;
+  text-align: left;
+  line-height: 1.5rem; }
+
+@media only screen and (max-width: 1199px) {
+  .studentshow {
+    margin: 0 0.5rem; }
+
+  .name {
+    font-size: 0.9rem; }
+
+  .text6 {
+    padding: 1rem 1.5rem 2rem 2rem; } }
+@media only screen and (max-width: 991px) {
+  .studentshow0 {
+    display: block;
+    margin: 0 10px 0 -5px; }
+
+  .studentshow {
+    margin-bottom: 2rem;
+    width: 100%; }
+
+  .text6 {
+    padding: 1rem 5rem 2rem 5rem; } }
+@media only screen and (max-width: 400px) {
+  .text6 {
+    padding: 1rem 2rem 2rem 2.5rem; } }
+.point {
+  display: flex;
+  margin: 1rem auto;
+  width: 4.5rem; }
+
+.point1, .point2 {
+  margin: 0 0.2rem;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 100%;
+  cursor: pointer; }
+
+.point1 {
+  background: #29b078; }
+
+.point2:hover {
+  background: #29b078; }
+
+main {
+  margin: 5rem auto;
+  width: 1150px; }
+
+.mainhead {
+  display: flex; }
+
+.mainheadtop, .mainheadright {
+  width: 25%; }
+
+.mainheadright {
+  padding-top: 4rem;
+  border-left: 1px dashed lightgray; }
+
+.img1, .img2, .img3 {
+  text-align: center; }
+
+.img2 {
+  margin-top: 0.8rem; }
+
+.img3 {
+  margin-top: 0.4rem; }
+
+.title1 {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  text-align: center; }
+
+.text1, .text4 {
+  padding: 0 20%;
+  color: darkgray;
+  line-height: 1.3rem; }
+
+.img4 {
+  float: left;
+  margin: 0 0.3rem 0 3.5rem; }
+
+.text2 {
+  color: #29b078;
+  font-weight: bold; }
+
+.text3 {
+  margin: 0.8rem 0 1.5rem 3.5rem;
+  color: darkgray; }
+
+@media only screen and (max-width: 1199px) {
+  main {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  main {
+    width: 718px; }
+
+  .mainhead {
+    display: block;
+    text-align: center; }
+
+  .mainheadtop, .mainheadright {
+    width: 100%; }
+
+  .mainheadright {
+    padding-top: 0;
+    border: none; }
+
+  .text1, .text4 {
+    margin: -1rem 0 4rem 0;
+    padding: 0; }
+
+  .img4 {
+    float: none;
+    margin-left: -1.2rem; }
+
+  .text2 {
+    margin: -0.8rem -2.8rem 0 0;
+    padding-bottom: 1rem; }
+
+  .text3 {
+    margin: -0.3rem 0 1.5rem 1rem; } }
+@media only screen and (max-width: 767px) {
+  main {
+    margin: 5rem 15px;
+    width: auto; } }
+@media only screen and (max-width: 430px) {
+  .text4 {
+    text-align: left; } }
+.howtostudy {
+  margin: 5rem 0 2rem 0;
+  width: 100%;
+  font-family: "榛戜綋";
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center; }
+
+.mainmiddle {
+  display: flex; }
+
+.step {
+  display: table;
+  margin-top: 2rem;
+  width: 25%;
+  height: 3rem; }
+
+.circle {
+  float: left;
+  margin: 0 1rem 0 2rem;
+  width: 3rem;
+  height: 3rem;
+  color: #29b078;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  border-radius: 100%; }
+
+.number {
+  margin: 0.9rem 0 0 1.1rem; }
+
+.text5 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 15rem;
+  color: darkgray;
+  line-height: 1.2rem; }
+
+.img5, .img6 {
+  float: right;
+  margin: 0 -1rem 0.9rem 1rem; }
+
+.img6 {
+  display: none; }
+
+@media only screen and (max-width: 1199px) {
+  .mainmiddle {
+    margin-left: -2rem; }
+
+  .img5, .img6 {
+    margin: 0 -1.5rem 0.9rem 0.5rem; } }
+@media only screen and (max-width: 991px) {
+  .mainmiddle, .step, .text5 {
+    display: block; }
+
+  .step {
+    margin-left: 13rem;
+    width: 50%;
+    border: 1px solid #fafafa; }
+
+  .text5 {
+    margin-top: 1rem;
+    width: auto; }
+
+  .img5 {
+    display: none; } }
+@media only screen and (max-width: 767px) {
+  .step {
+    margin-left: 28%; } }
+@media only screen and (max-width: 700px) {
+  .step {
+    margin-left: 22%;
+    width: 100%; } }
+@media only screen and (max-width: 600px) {
+  .step {
+    margin-left: 18%; } }
+@media only screen and (max-width: 500px) {
+  .step {
+    margin-left: 13%; } }
+@media only screen and (max-width: 450px) {
+  .step {
+    margin-left: -2px; } }
+@media only screen and (max-width: 336px) {
+  .step {
+    display: table; }
+
+  .text5 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20rem; } }
+.company {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  background-color: white;
+  border-radius: 1%;
+  box-shadow: 0 0 0.2rem darkgray; }
+
+.logo2, .logo3, .logo4, .logo5, .logo6 {
+  width: 20%;
+  text-align: center;
+  cursor: pointer; }
+
+.logo2 {
+  padding: 0.2rem 0;
+  margin: 0 0.5rem 0 0.1rem; }
+
+.logo3, .logo4, .logo5 {
+  margin: 0 0.5rem; }
+
+.logo3 {
+  padding: 2.8rem 0; }
+
+.logo4 {
+  padding: 0.7rem 0; }
+
+.logo5 {
+  padding: 2.4rem 0; }
+
+.logo6 {
+  padding: 0.9rem 0.5rem 0.9rem 0; }
+
+.logo2:hover, .logo3:hover, .logo4:hover, .logo5:hover, .logo6:hover {
+  box-shadow: 0 0 1rem lightgray; }
+
+@media only screen and (max-width: 991px) {
+  .company {
+    display: block;
+    height: auto;
+    background: none;
+    box-shadow: none; }
+
+  .logo2, .logo3, .logo4, .logo5, .logo6 {
+    margin: 1rem auto;
+    width: 20rem;
+    background: white; } }
+@media only screen and (max-width: 400px) {
+  .logo2, .logo3, .logo4, .logo5, .logo6 {
+    width: 15rem; } }
+.friend, .white {
+  width: 100%;
+  background: white; }
+
+.friend {
+  padding-top: 1rem;
+  height: 2rem;
+  font-family: "榛戜綋";
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center; }
+
+.white {
+  height: 4rem; }
+
+.link {
+  margin: 0 auto;
+  width: 1150px; }
+
+.text7 {
+  float: left;
+  margin: 0.5rem 1.5rem;
+  width: 4rem;
+  color: darkgray;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.text7:hover {
+  text-decoration: underline;
+  text-decoration-color: #29b078; }
+
+@media only screen and (max-width: 1199px) {
+  .white {
+    height: 6rem; }
+
+  .link {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .white {
+    height: 8rem; }
+
+  .link {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .link {
+    margin: 0 15px;
+    width: auto; } }
+@media only screen and (max-width: 606px) {
+  .white {
+    height: 10rem; } }
+@media only screen and (max-width: 600px) {
+  .white {
+    margin-bottom: -2rem; } }
+@media only screen and (max-width: 494px) {
+  .white {
+    height: 13rem; } }
+@media only screen and (max-width: 382px) {
+  .white {
+    height: 18rem; }
+
+  .link {
+    margin-left: 3rem; } }
+
+/*# sourceMappingURL=Task14-1.css.map */

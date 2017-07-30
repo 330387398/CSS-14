@@ -1,0 +1,92 @@
+.guide {
+  height: 6rem;
+  background: #29b078; }
+
+.guide1 {
+  margin: 0 auto;
+  width: 1150px; }
+
+.guide2, .guide3 {
+  float: right;
+  padding: 2.15rem 2.5rem;
+  color: white;
+  font-size: 1.2rem; }
+
+.guide3 {
+  margin-right: -2.5rem; }
+
+.guide2:hover, .guide3:hover {
+  border-bottom: 0.5rem solid white; }
+
+@media only screen and (max-width: 1199px) {
+  .guide1 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .guide1 {
+    width: 718px; } }
+@media only screen and (max-width: 800px) {
+  .guide3 {
+    margin-right: -1.5rem; } }
+.blank {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .guide {
+    height: auto; }
+
+  .blank {
+    display: block;
+    margin-left: 10rem;
+    width: 1px;
+    height: 3rem; }
+
+  .guide1 {
+    display: none; } }
+.guide4 {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .guide4 {
+    display: block; } }
+.guide5 {
+  float: right;
+  margin: -3rem 15px 0 0;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+  cursor: pointer; }
+
+.guide6 {
+  display: none;
+  padding-bottom: 0.5rem;
+  background: #29b078; }
+
+.guide4:hover .guide6 {
+  display: block; }
+
+.guide7, .guide8 {
+  color: white;
+  font-size: 1rem;
+  line-height: 3rem;
+  text-align: center; }
+
+.guide7 {
+  border-top: 1px solid lightgray; }
+
+.guide7:hover, .guide8:hover {
+  border-bottom: 1px solid lightgray; }
+
+.logo {
+  margin-top: 1.5rem; }
+
+.logo1 {
+  display: none;
+  float: left;
+  margin: -2.6rem 0 0 15px;
+  width: 5rem; }
+
+@media only screen and (max-width: 767px) {
+  .logo1 {
+    display: block; } }
+
+/*# sourceMappingURL=guide.css.map */

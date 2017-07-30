@@ -1,0 +1,21 @@
+@charset "utf-8";  
+@import '../../parameter/parameter';
+
+//页面一banner轮播部分代码
+
+.banner1{
+    display: flex;
+}
+.banner2{
+    position: relative;
+    width: $width;
+    height: $width;    
+    animation: mymove 15s infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+@keyframes mymove{
+    0%{left: 0;}
+    50%{left: -200%;}
+    100%{left: 0;}
+}

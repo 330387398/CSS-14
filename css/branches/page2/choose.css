@@ -1,0 +1,64 @@
+.guide9 {
+  display: flex;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 1150px;
+  font-size: 0.9rem;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid lightgray;
+  white-space: nowrap; }
+
+.direction {
+  margin-right: 1rem;
+  color: darkgray; }
+
+ul {
+  display: flex; }
+
+.text0 {
+  margin-top: -0.4rem;
+  padding: 0.3rem;
+  color: white;
+  font-weight: bold;
+  background: #29b078; }
+
+.text {
+  color: black;
+  margin: -0.4rem 0 0 1rem;
+  padding: 0.3rem; }
+
+.text:hover {
+  color: white;
+  font-weight: bold;
+  background: #29b078; }
+
+@media only screen and (max-width: 1199px) {
+  .guide9 {
+    width: 942px; } }
+@media only screen and (max-width: 991px) {
+  .guide9 {
+    width: 718px; } }
+@media only screen and (max-width: 767px) {
+  .guide9 {
+    margin: 0 15px;
+    width: auto; } }
+@media only screen and (max-width: 550px) {
+  .guide9 {
+    margin: 0 15px;
+    padding-bottom: 0;
+    width: auto; }
+
+  ul {
+    display: block; }
+
+  li {
+    float: left;
+    margin-bottom: 1rem; }
+
+  .text0 {
+    margin-right: 1rem; }
+
+  .text {
+    margin: -0.4rem 1rem 0 0; } }
+
+/*# sourceMappingURL=choose.css.map */
